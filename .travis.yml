@@ -1,0 +1,4 @@
+env:
+  - VAR=
+script:
+  - if [ -z "${VAR+xxx}" ]; then echo VAR is not set at all; fi
