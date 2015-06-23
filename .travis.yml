@@ -1,4 +1,5 @@
 env:
-  - VAR=
+  - FOO=foo VAR=
 script:
+  - echo $FOO
   - if [ -z "${VAR+xxx}" ]; then echo VAR is not set at all; fi
